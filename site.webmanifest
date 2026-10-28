@@ -1,0 +1,17 @@
+{
+  "name": "Smart Multi-List & Checklist Manager - Gamility",
+  "short_name": "TaskFlow",
+  "description": "Simple, neat, and private multi-list and checklist manager with 100% local persistence.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

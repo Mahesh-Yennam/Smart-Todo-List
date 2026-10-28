@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#10b981" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="#334155" stroke-width="2"/>
+
+  <!-- Checklist Paper Frame -->
+  <rect x="12" y="10" width="40" height="44" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Top Clip / Binder -->
+  <rect x="24" y="7" width="16" height="6" rx="3" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Checklist Row 1: Checked -->
+  <rect x="18" y="19" width="8" height="8" rx="2" fill="url(#checkGrad)" filter="url(#glow)"/>
+  <path d="M20 23 L22 25 L25 21" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="29" y1="23" x2="45" y2="23" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Checklist Row 2: Checked -->
+  <rect x="18" y="30" width="8" height="8" rx="2" fill="url(#checkGrad)" filter="url(#glow)"/>
+  <path d="M20 34 L22 36 L25 32" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="29" y1="34" x2="43" y2="34" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Checklist Row 3: Pending -->
+  <rect x="18" y="41" width="8" height="8" rx="2" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="29" y1="45" x2="39" y2="45" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+</svg>
